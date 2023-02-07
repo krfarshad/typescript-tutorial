@@ -106,3 +106,17 @@ function identify <Item extends Animal | Human> (item : Item):Item{
 
 }
 // use generic for handle dynamic type 
+
+// add props type for /////// react js ////////
+
+type funcProps = {
+ name : string , 
+children : ReactNode,
+// dispatch and setstateaction will import from react and for statehandling function will use.
+  setShow :Dispatch<SetStateAction<boolean>>
+}
+const func = (props : funcProps ) {
+  const {name , children} = props ; 
+...
+}
+  const [show, setShow] = useState<boolean>(true);
