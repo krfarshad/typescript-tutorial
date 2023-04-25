@@ -19,9 +19,9 @@ names = ["farshad" , "hassan"]
 
 
 // more than one type
-let num : number | string
-num = 4
-num = "4"
+let num : number | string 
+    num = 4
+    num = "4"
 
 
 // params type , function type and default parameters
@@ -110,13 +110,18 @@ function identify <Item extends Animal | Human> (item : Item):Item{
 // add props type for /////// react js ////////
 
 type funcProps = {
- name : string , 
-children : ReactNode,
-// dispatch and setstateaction will import from react and for statehandling function will use.
-  setShow :Dispatch<SetStateAction<boolean>>
+    name : string , 
+    children : ReactNode,
+   // dispatch and setstateaction will import from react and for statehandling function will use.
+    setShow :Dispatch<SetStateAction<boolean>>
 }
 const func = (props : funcProps ) {
-  const {name , children} = props ; 
-...
+    const {name , children} = props ; 
+
 }
-  const [show, setShow] = useState<boolean>(true);
+const [show, setShow] = useState<boolean>(true);
+
+// difference between interface and type
+
+// in interface there is inheritance but in type you can't 
+// in inteface you can not add default value
